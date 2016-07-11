@@ -16,7 +16,7 @@
             android:id="@+id/pop_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/more_customer_text"
+            android:text="客服电话"
             android:layout_marginTop="20dp"
             android:textSize="@dimen/contenttext_bigsize"
             android:textColor="@color/content_textcolor"

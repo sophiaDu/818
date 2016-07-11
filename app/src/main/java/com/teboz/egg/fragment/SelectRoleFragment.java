@@ -12,7 +12,6 @@ import android.support.v17.leanback.widget.HorizontalGridView;
 import android.support.v17.leanback.widget.OnChildViewHolderSelectedListener;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -314,13 +313,13 @@ public class SelectRoleFragment extends Fragment implements View.OnTouchListener
             hgv_menu.setSelectedPosition(num);
         }
 
-        Log.e("selectfragment", "resume");
+//        Log.e("selectfragment", "resume");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.e("selectfragment", "pause");
+//        Log.e("selectfragment", "pause");
     }
 
     //获取屏幕的宽度
@@ -403,7 +402,7 @@ public class SelectRoleFragment extends Fragment implements View.OnTouchListener
                 adapter.notifyDataSetChanged();
                 int num = myApplication.getSpIntValue("current_role");
 
-                Log.e("selecfragment","broadcast-->cuurrent role: "+num);
+//                Log.e("selecfragment","broadcast-->cuurrent role: "+num);
                 if (num < 0 || num >= myApplication.cardInfos.size()) {//如果获取的角色值非法，则设为默认值0，即第一个角色
                     num = 7;
                 }

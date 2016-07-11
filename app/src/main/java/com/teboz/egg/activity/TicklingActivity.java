@@ -63,7 +63,7 @@ public class TicklingActivity extends Activity {
 
     private void initView() {
         id_tv_center = (TextView) findViewById(R.id.id_tv_center);
-        id_tv_center.setText(R.string.more_feedback_text);
+        id_tv_center.setText("反馈");
 
         id_tv_right = (TextView) findViewById(R.id.id_tv_right);
         id_tv_right.setText(R.string.text_send);
@@ -152,7 +152,7 @@ public class TicklingActivity extends Activity {
                         try {
                             rc = response.getInt("rc");
                             if (rc == 200) {
-//                                Utils.Toast(TicklingActivity.this, "提交成功");
+                                Utils.Toast(TicklingActivity.this, "提交成功");
 
                             } else if (rc == 3001) {
 //                                Utils.Toast(TicklingActivity.this, "手机号格式错误");

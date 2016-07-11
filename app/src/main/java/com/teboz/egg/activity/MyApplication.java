@@ -128,7 +128,7 @@ public class MyApplication extends Application {
                     encode_ComAir5.PlayComAirCmd(msg.arg2, 1.0f);
                     setCurrentCommend(msg.arg2);
 
-//                    Log.e("cmd", "send cmd:[" + msg.arg1 + ", " + msg.arg2 + "]");
+                    Log.e("cmd", "send cmd:[" + msg.arg1 + ", " + msg.arg2 + "]");
                 }
             }
 
@@ -255,7 +255,7 @@ public class MyApplication extends Application {
 
             //解析info数组，解析中括号括起来的内容就表示一个数组，使用JSONArray对象解析
             JSONArray array = jsonObject.getJSONArray("cards");
-            Log.e("application", array.toString());
+            //Log.e("application", array.toString());
             //Log.e("dj", "array's length: ");
 
             //StringBuffer操作字符串的一个高效类，保存解析的结果，以便于在TextView中显示

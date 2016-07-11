@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.CountDownTimer;
 import android.support.v17.leanback.widget.HorizontalGridView;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -151,7 +150,7 @@ public class CardHorizontalGridView extends HorizontalGridView {
             float offsetY = y2 - y1;
             long offtime = time2 - time1;
             int speed = Math.round(Math.abs(offsetX) / offtime);
-             Log.e("selectrole", "speed: " + (Math.abs(offsetX) / offtime));
+//             Log.e("selectrole", "speed: " + (Math.abs(offsetX) / offtime));
             if (Math.abs(offsetX) >= Math.abs(offsetY) && !isShowDelete) {//横向
                //根据手指不同滑动的速度滑动
                 if (offsetX >= 25) {

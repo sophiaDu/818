@@ -39,7 +39,7 @@ public class PrivacyActivity extends Activity implements View.OnClickListener{
         id_iv_back.setOnClickListener(this);
         id_tv_left.setOnClickListener(this);
         id_tv_left.setText(R.string.head_left_back);
-        id_tv_center.setText(R.string.more_privacy_text);
+        id_tv_center.setText("隐私政策");
     }
 
     @Override

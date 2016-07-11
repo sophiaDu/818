@@ -7,7 +7,7 @@
     <string name="bt_cancel">取消</string>
     <string name = "head_left_back">返回</string>
     <string name = "text_feedback">我们期待您的建议或问题</string>
-    <string name = "text_hint_msg">您的邮箱或手机号码(选填)</string>
+    <string name = "text_hint_msg">您的邮箱或手机号码(可不填)</string>
     <string name = "text_hint_content">请留言:</string>
     <string name = "head_feedback">反馈</string>
 
