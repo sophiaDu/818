@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+    <!--顶栏-->
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></include>
+
+    <TextView
+        android:id="@+id/diy_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/diy_text1"
+        android:textColor="@color/content_textcolor"
+        android:textSize="@dimen/contenttext_midsize" />
+
+    <TextView
+        android:id="@+id/diy_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/diy_text2"
+        android:textColor="@color/content_textcolor"
+        android:textSize="@dimen/contenttext_midsize" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more_diy_back"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="0.5dp"
+            android:src="@mipmap/more_diy_pic2" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/diy_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/diy_text3"
+        android:textColor="@color/content_textcolor"
+        android:textSize="@dimen/contenttext_midsize" />
+
+</LinearLayout>

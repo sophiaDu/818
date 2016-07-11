@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    tools:context="com.tbz.wifibox.AboutActivity">
+
+    <include
+        android:id="@+id/id_title"
+        layout="@layout/layout_head" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_1"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_2"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_3"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_4"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_5"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_6"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_7"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_8"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_9"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:text="@string/text_privacy_10"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_11"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_12"
+                android:textColor="@color/content_textcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_13"
+                android:textColor="@color/content_textcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_14"
+                android:textColor="@color/content_textcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:textSize="@dimen/contenttext_midsize"
+                android:text="@string/text_privacy_15"
+                android:textColor="@color/content_textcolor" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

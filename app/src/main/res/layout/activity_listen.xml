@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--顶栏-->
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        android:background="@mipmap/more_start_back2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/more_start_back_pic" />
+
+        <Button
+            android:id="@+id/listen_btn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/choose_try"
+            android:text="试听"
+            android:textColor="@color/cardtext_color"
+            android:textSize="@dimen/contenttext_midsize" />
+
+        <Button
+            android:id="@+id/re_recorder_btn"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@mipmap/choose_cancle"
+            android:text="重录"
+            android:layout_below="@+id/listen_btn"
+            android:textColor="@color/content_textcolor"
+            android:textSize="@dimen/contenttext_midsize" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

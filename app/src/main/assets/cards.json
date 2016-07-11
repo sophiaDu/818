@@ -1,0 +1,54 @@
+{
+  "cards": [
+    {
+      "id":0,
+      "name": "单身狗",
+      "cmd":1,
+      "imageindex":0
+    },
+    {
+      "id":1,
+      "name": "霸道总裁",
+      "cmd":0,
+      "imageindex":1
+    },
+    {
+      "id":2,
+      "name": "老司机",
+      "cmd":2,
+      "imageindex":2
+    },
+    {
+      "id":3,
+      "name": "女汉子",
+      "cmd":3,
+      "imageindex":3
+    },
+    {
+      "id":4,
+      "name": "亲爱的",
+      "cmd":4,
+      "imageindex":4
+    },
+    {
+      "id":5,
+      "name": "寿星",
+      "cmd":5,
+      "imageindex":5
+    },
+    {
+      "id":6,
+      "name": "学霸",
+      "cmd":6,
+      "imageindex":6
+    },
+    {
+      "id":7,
+      "name": "完美标准嗨蛋",
+      "cmd":17,
+      "imageindex":7
+    }
+
+    
+  ]
+}

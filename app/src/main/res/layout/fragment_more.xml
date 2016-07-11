@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical">
+
+    <!--顶栏-->
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="-1.8dp"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/powersound_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/more_start_back"
+                    android:layout_marginRight="-1.5dp"/>
+
+                <ImageView
+                    android:id="@+id/powersound_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/more_start_pic" />
+
+                <TextView
+                    android:id="@+id/powersound_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/diy_my_sound_text"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/hightogether_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/more_happy_back"
+                    android:layout_marginRight="-1.5dp"/>
+
+                <ImageView
+                    android:id="@+id/hightogether_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="0.5dp"
+                    android:src="@mipmap/more_happy_pic" />
+
+                <TextView
+                    android:id="@+id/hightogether_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/multi_eggs_interaction_text"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+            </FrameLayout>
+
+        <!--    <FrameLayout
+                android:id="@+id/diy_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/more_diy_back" />
+
+                <ImageView
+                    android:id="@+id/diy_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_marginBottom="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/more_diy_pic1" />
+
+                <TextView
+                    android:id="@+id/diy_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="40dp"
+                    android:text="自定义问答"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+            </FrameLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/customer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onClick">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/grayline_color" />
+
+                <ImageView
+                    android:id="@+id/customer_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/more_phone" />
+
+                <TextView
+                    android:id="@+id/customer_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/customer_iv"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="@string/more_customer_text"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+
+                <ImageView
+                    android:id="@+id/customer_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onClick"
+                    android:src="@mipmap/more_arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@+id/customer_tv"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grayline_color" />
+            </RelativeLayout>
+
+           <!-- <RelativeLayout
+                android:id="@+id/vip_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/vip_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/more_vip" />
+
+                <TextView
+                    android:id="@+id/vip_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/vip_iv"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="VIP计划"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+
+                <ImageView
+                    android:id="@+id/vip_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onClick"
+                    android:src="@mipmap/more_arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@+id/vip_tv"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grayline_color" />
+            </RelativeLayout>
+-->
+            <RelativeLayout
+                android:id="@+id/feedback_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/feedback_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/more_word" />
+
+                <TextView
+                    android:id="@+id/feedback_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/feedback_iv"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="@string/more_feedback_text"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+
+                <ImageView
+                    android:id="@+id/feedback_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onClick"
+                    android:src="@mipmap/more_arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@+id/feedback_tv"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grayline_color" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/about_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/about_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/more_tbz" />
+
+                <TextView
+                    android:id="@+id/about_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/about_iv"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="@string/more_about_text"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+
+                <ImageView
+                    android:id="@+id/about_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onClick"
+                    android:src="@mipmap/more_arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@+id/about_tv"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grayline_color" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/privacy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/privacy_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/more_secret" />
+
+                <TextView
+                    android:id="@+id/privacy_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/privacy_iv"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:text="@string/more_privacy_text"
+                    android:textColor="@color/content_textcolor"
+                    android:textSize="@dimen/contenttext_midsize" />
+
+                <ImageView
+                    android:id="@+id/privacy_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:onClick="onClick"
+                    android:src="@mipmap/more_arrow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grayline_color" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

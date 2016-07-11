@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    tools:context="com.tbz.wifibox.TicklingActivity">
+
+    <include
+        android:id="@+id/id_title"
+        layout="@layout/layout_head" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/id_tv_advise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="@string/text_feedback"
+                android:textColor="@color/content_textcolor"
+                android:textSize="@dimen/contenttext_bigsize" />
+
+            <TextView
+                android:id="@+id/above_line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#7f9fb0c4"
+                android:layout_below="@id/id_tv_advise"/>
+
+            <EditText
+                android:id="@+id/id_et_content"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/above_line1"
+                android:background="#ffffff"
+                android:gravity="top"
+                android:hint="@string/text_hint_content"
+                android:maxLength="140"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/content_textcolor"
+                android:textSize="@dimen/contenttext_midsize" />
+
+
+            <TextView
+                android:id="@+id/below_line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/id_et_content"
+                android:background="#7f9fb0c4" />
+            <TextView
+                android:id="@+id/textcount_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/below_line1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="0/140"
+                android:textColor="@color/content_textcolor"
+                android:textSize="@dimen/contenttext_midsize"/>
+
+
+            <TextView
+                android:id="@+id/above_line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/below_line1"
+                android:background="#7f9fb0c4"
+                android:layout_marginTop="60dp"/>
+
+            <EditText
+                android:id="@+id/id_et_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/above_line2"
+                android:background="#ffffff"
+                android:hint="@string/text_hint_msg"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="true"
+                android:textColor="@color/content_textcolor"
+                android:textSize="@dimen/contenttext_midsize" />
+
+            <TextView
+                android:id="@+id/below_line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/id_et_number"
+                android:background="#7f9fb0c4" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+   <!-- <TextView
+        android:id="@+id/id_tv_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/id_et_content"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:text="0/140"
+        android:textColor="@color/cardtext_color" />-->
+</RelativeLayout>

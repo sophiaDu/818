@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="40dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/choose_delete"
+                android:gravity="center|center_horizontal"
+                android:text="@string/confirm_delete_text"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/contenttext_midsize" />
+
+            <TextView
+                android:id="@+id/msg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_below="@+id/delete_tv"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/delete_role_prompt_text"
+                android:textColor="@color/content_textcolor"
+                android:textSize="@dimen/contenttext_midsize" />
+
+            <TextView
+                android:id="@+id/cancle_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msg_tv"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/choose_cancle"
+                android:gravity="center"
+                android:text="@string/cancle_delete_text"
+                android:textColor="@color/content_textcolor"
+                android:textSize="@dimen/contenttext_midsize" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="15dp">
+
+            <ImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="霸道总裁"
+                android:textColor="@color/cardtext_color"
+                android:textSize="@dimen/bigcard_textsize" />
+        </FrameLayout>
+        <!--
+            <FrameLayout
+                android:id ="@+id/content2_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="15dp"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_above="@+id/delete_layout">
+                <ImageView
+                    android:id="@+id/iv_menu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/card_1_small"
+                    />
+
+                <TextView
+                    android:id="@+id/name_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/cardtext_color"
+                    android:textSize="@dimen/contenttext_bigsize"
+                    android:text="霸道总裁"/>
+            </FrameLayout>-->
+
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	android:background="@color/backgroud_color"
+	tools:context = "com.tbz.wifibox.AboutActivity">
+
+	<include
+		android:id="@+id/id_title"
+		layout="@layout/layout_head" />
+<!--
+	<ScrollView
+		android:layout_width = "wrap_content"
+		android:layout_height = "wrap_content"
+		android:layout_below="@id/id_title">-->
+
+		<RelativeLayout
+			android:layout_width = "wrap_content"
+			android:layout_height = "match_parent"
+			android:layout_below="@id/id_title">
+
+			<ImageView
+				android:id="@+id/id_iv_logo"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="25dp"
+				android:src="@mipmap/tbz_logo"/>
+			<TextView
+				android:layout_below="@id/id_iv_logo"
+				android:layout_width = "wrap_content"
+				android:layout_height = "wrap_content"
+				android:lineSpacingExtra="10dp"
+				android:padding="25dp"
+				android:textColor="@color/content_textcolor"
+				android:textSize="@dimen/contenttext_midsize"
+				android:text="@string/text_about_us"/>
+
+			<TextView
+				android:id="@+id/weblink"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:textColor="@color/redtext_color"
+				android:layout_marginBottom="20dp"
+				android:autoLink="web"/>
+		</RelativeLayout>
+
+<!--	</ScrollView>-->
+
+</RelativeLayout>

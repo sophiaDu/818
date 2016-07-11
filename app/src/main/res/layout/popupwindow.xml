@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_rectangle_white">
+
+        <TextView
+            android:id="@+id/pop_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_customer_text"
+            android:layout_marginTop="20dp"
+            android:textSize="@dimen/contenttext_bigsize"
+            android:textColor="@color/content_textcolor"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/pop_content"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/pop_title"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/contenttext_bigsize"
+            android:textColor="@color/content_textcolor"
+            android:gravity="center"
+            android:text="400-801-5090"/>
+
+        <Button
+            android:id="@+id/cancle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_rectangle_gray"
+            android:textSize="@dimen/contenttext_midsize"
+            android:textColor="#ffffffff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/pop_content"
+            android:text="取消"/>
+        <Button
+            android:id="@+id/yes_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_rectangle_lightblue"
+            android:textSize="@dimen/contenttext_midsize"
+            android:textColor="#ffffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/pop_content"
+            android:text="呼叫"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

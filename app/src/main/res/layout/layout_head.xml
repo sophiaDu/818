@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_tab_rl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/bar_up"/>
+
+        <ImageView
+            android:id="@+id/id_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dp"
+            android:scaleType="center"
+            android:src="@mipmap/arrowleft"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/id_iv_back"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/redtext_color"
+            android:textSize="@dimen/top_normaltextsize"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textColor="@color/toptext_color"
+            android:textSize="@dimen/top_bigtextsize" />
+
+        <TextView
+            android:id="@+id/id_tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:textColor="@color/redtext_color"
+            android:textSize="@dimen/top_bigtextsize"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/id_ib_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@mipmap/role_add"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+    <!--layout for study view fragment-->
+
+  >
+
+
+</RelativeLayout>

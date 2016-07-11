@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+    <!--顶栏-->
+    <include
+        android:id="@+id/top_layout"
+        layout="@layout/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_below="@+id/top_layout">
+
+        <FrameLayout
+            android:id="@+id/card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+           >
+
+            <ImageView
+                android:id="@+id/card_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/card_purple_big" />
+
+            <EditText
+                android:id="@+id/cardname_et"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:padding="10dp"
+                android:maxLength="6"
+                android:maxEms="7"
+                android:hint="角色名称"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textColor="@color/cardtext_color"
+                android:textSize="@dimen/bigcard_textsize" >
+                <requestFocus></requestFocus>
+                </EditText>
+        </FrameLayout>
+    </ScrollView>
+
+
+</LinearLayout>

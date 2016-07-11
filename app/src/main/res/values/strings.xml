@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">嗨蛋</string>
+    <string name="action_settings">Settings</string>
+
+
+
+
+    <string name="text_send">发送</string>
+    <string name="bt_cancel">取消</string>
+    <string name = "head_left_back">返回</string>
+    <string name = "text_feedback">我们期待您的建议或问题</string>
+    <string name = "text_hint_msg">您的邮箱或手机号码(选填)</string>
+    <string name = "text_hint_content">请留言:</string>
+    <string name = "head_feedback">反馈</string>
+
+    <string name="text_vip_hint">填写您的邮箱地址或手机号码</string>
+    <string name="text_vip_information_1">留下您的联系方式，成为我们的VIP会员：</string>
+    <string name="text_vip_information_2">1 远程技术支持服务 7×24小时,VIP座席优先受理；\n2 公司正价新品享优惠价格；\n3 优先体验新品机会；\n4 其他后续礼遇；</string>
+    <string name="text_vip_information_3">TBZ</string>
+
+
+    <string name="text_privacy_1">TBZ尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，TBZ会按照本隐私权政策的规定使用和披露您的个人信息。但TBZ将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，TBZ不会将这些信息对外披露或向第三方提供。TBZ会不时更新本隐私权政策。</string>
+    <string name="text_privacy_2">您在同意TBZ服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于TBZ服务使用协议不可分割的一部分。</string>
+    <string name="text_privacy_3">1. 适用范围</string>
+    <string name="text_privacy_4"> a) 在您注册TBZ帐号时，您根据TBZ要求提供的个人注册信息；   \nb) 在您使用TBZ网络服务，或访问TBZ平台网页时，TBZ自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据；  \nc) TBZ通过合法途径从商业伙伴处取得的用户个人数据。</string>
+    <string name="text_privacy_5"> 您了解并同意，以下信息不适用本隐私权政策：   \na) 您在使用TBZ平台提供的搜索服务时输入的关键字信息；   \nb) TBZ收集到的您在TBZ发布的有关信息数据，包括但不限于参与活动、成交信息及评价详情；   \nc) 违反法律规定或违反TBZ规则行为及TBZ已对您采取的措施。</string>
+    <string name="text_privacy_6">2. 信息使用</string>
+    <string name="text_privacy_7">a) TBZ不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和TBZ（含TBZ关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。   \nb) TBZ亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何TBZ平台用户如从事上述活动，一经发现，TBZ有权立即终止与该用户的服务协议。   \nc) 为服务用户的目的，TBZ可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与TBZ合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。</string>
+    <string name="text_privacy_8">3. 信息披露</string>
+    <string name="text_privacy_9">在如下情况下，TBZ将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：   \na) 经您事先同意，向第三方披露；   \nb) 为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；   \nc) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；\n d) 如您出现违反中国有关法律、法规或者TBZ服务协议或相关规则的情况，需要向第三方披露；    \ne) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；  \nf) 在TBZ平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，TBZ有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。    \ng) 其它TBZ根据法律、法规或者网站政策认为合适的披露。</string>
+    <string name="text_privacy_10">4. 信息存储和交换</string>
+    <string name="text_privacy_11">TBZ收集的有关您的信息和资料将保存在TBZ及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或TBZ收集信息和资料所在地的境外并在境外被访问、存储和展示。</string>
+    <string name="text_privacy_12">5. Cookie的使用</string>
+    <string name="text_privacy_13">a) 在您未拒绝接受cookies的情况下，TBZ会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的TBZ平台服务或功能。TBZ使用cookies可为您提供更加周到的个性化服务，包括推广服务。  \nb) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的TBZ网络服务或功能。  \nc) 通过TBZ所设cookies所取得的有关信息，将适用本政策。</string>
+    <string name="text_privacy_14">6. 信息安全</string>
+    <string name="text_privacy_15">a) TBZ帐号均有安全保护功能，请妥善保管您的用户名及密码信息。TBZ将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。    \nb) 在使用TBZ网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是TBZ用户名及密码发生泄露，请您立即联络TBZ客服，以便TBZ采取相应措施。</string>
+
+    <string name = "text_about_us">TBZ（深圳市天博智科技有限公司）成立于2011年，总部设在中国深圳，创始团队来自中国科学院、美国卡内基梅隆大学、香港科技大学等世界一流的机器人与人工智能研究机构，在智能语音识别技术的研发和产业化方面有着独特的行业地位。TBZ聚焦于消费类机器人的研发及销售领域，企业核心理念是用科学、科技、科幻的产品和内容让人永葆探索童心。</string>
+
+
+
+    <string name="diy_text1">在嗨蛋上，你可以像这样训练：\n问：老王去哪了？\n答：老王去隔壁了！\n训练好后，就可以当着老王问：“老王去哪了？”\n嗨蛋就会按照你教好的说：“老王去隔壁了！”</string>
+    <string name="diy_text2">长按开始训练，跟随嗨蛋语音提示操作，很简单</string>
+    <string name="diy_text3">提示：最多可以录制多达5个问答，第六个会顶替第一个，以此类推；</string>
+
+    <string name="happytogether_text">第一步：最多四个嗨蛋依次开机\n第二部：点下面的</string>
+
+    <string-array name="hightogether">
+        <item>白日依山尽</item>
+        <item>朝辞白帝彩云间</item>
+        <item>跟女生表白用什么歌最合适</item>
+        <item>好紧张 要见家长了</item>
+        <item>教师辛苦工作累</item>
+        <item>今天你有福了</item>
+        <item>两岸猿生啼不住</item>
+        <item>论成败</item>
+        <item>你表白过吗</item>
+        <item>你工资多少</item>
+        <item>女朋友重要还是馒头重要</item>
+        <item>上帝给我一张嘴</item>
+        <item>少小离家老大回</item>
+        <item>头悬梁啊锥刺股</item>
+        <item>我们四人走上台</item>
+        <item>下面给大伙唱一段RAP</item>
+        <item>下面请欣赏大合唱《好汉歌》</item>
+        <item>研发加班真辛苦</item>
+        <item>有人说我们不会唱京剧</item>
+        <item>昨天马云跟我说话啦</item>
+    </string-array>
+
+
+    <!--角色扮演页文案-->
+    <string name="directorfragment_topprompt_text">嗨蛋提示：大王，请在嗨蛋安静时下命令，再给小的一个红绿灯的时间准备。</string>
+    <string name="change_role_button_text">更换角色</string>
+    <!--选择角色页面文案-->
+    <string name="selectfragment_topprompt_text">左右滑动挑选，上下滑动删除</string>
+    <string name="delete_role_prompt_text">拖出去斩了？</string>
+    <string name="confirm_delete_text">斩</string>
+    <string name="cancle_delete_text">拖回来</string>
+    <!--添加角色页面文案-->
+    <string name="recorder_touch_head_sound">大王，求录摸头声</string>
+    <string name="recorder_shake_sound">大王，求录摇晃声</string>
+    <string name="recorder_upside_sound">大王，求录倒置声</string>
+    <string name="prompt_please_talk_to_egg">大王您对着蛋说话</string>
+    <!--更多-->
+    <string name="more_text">更多</string>
+    <string name="more_powersound_text">开机声音</string>
+    <string name="more_customer_text">欢迎大王来电</string>
+    <string name="more_feedback_text">大王意见写这里</string>
+    <string name="more_about_text">大王来看我啊</string>
+    <string name="more_privacy_text">小的保护大王的隐私</string>
+    <string name="default_sound_text">默认开机声</string>
+    <string name="diy_my_sound_text">定制开机声</string>
+    <string name="my_sound_text">我的开机声</string>
+
+    <string name="multi_eggs_interaction_text">多机互动</string>
+    <string name="multi_eggs_interaction_steps_text">连接嗨蛋步骤：\n1.大王，亮出您的蛋（超过4个小的接受不了）\n2.第1个蛋拨动到App模式，播放完开机声\n3.第2个蛋拨动到App模式，等待提示音：“我连上了”\n4.（如果您有3个蛋）第3个蛋拨动到App模式，等待提示音：“我也连上了”\n5.（如果您有4个蛋）第4个蛋拨动到App模式，等待提示音：“我也也连上了” </string>
+
+    <string name="all_play_text">播放全部</string>
+    <string name="all_play_smalltext">摸头来停止播放。</string>
+</resources>

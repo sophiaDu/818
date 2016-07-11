@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="demand_list_title_text_size">18sp</dimen>
+    <dimen name="demand_item_text_size">20sp</dimen>
+
+
+
+
+    <dimen name="top_bigtextsize">17dp</dimen>
+    <dimen name="top_midtextsize">17dp</dimen>
+    <dimen name="top_normaltextsize">17dp</dimen>
+    <dimen name="top_smalltextsize">12dp</dimen>
+
+    <dimen name = "bigcard_textsize">23dp</dimen>
+    <dimen name = "contenttext_normalsize">12dp</dimen>
+    <dimen name = "contenttext_bigsize">17dp</dimen>
+    <dimen name = "contenttext_midsize">15dp</dimen>
+    <dimen name="tab_text_size">12dp</dimen>
+
+
+
+</resources>
