@@ -80,8 +80,8 @@ public class CardHorizontalGridView extends HorizontalGridView {
                 }
 
                 int width = getScreenWidth(mContext);
-                if (x2 >= (width / 4) && x2 <= (width - (width / 4)) && (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1))) {
-                    if ((int) (ev.getY() - y1) > 10 && (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1))) {
+                if (x2 >= (width / 4) && x2 <= (width - (width / 4)) && (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1))) {//手指在居中的卡片范围内
+                    if ((int) (ev.getY() - y1) > 10 && (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1))) {//向下滑动
 
                         ismove = true;
 
@@ -98,7 +98,7 @@ public class CardHorizontalGridView extends HorizontalGridView {
                         if (lastmove > 20)
                             callback.pulldown();
 
-                    } else if ((int) (ev.getY() - y1) < -10 && (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1))) {
+                    } else if ((int) (ev.getY() - y1) < -10 && (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1))) {//向上滑动
                         ismove = true;
 
                         ValueAnimator animator = ValueAnimator.ofFloat(lastmove, (int) (ev.getY() - y1)).setDuration(100);
@@ -115,95 +115,14 @@ public class CardHorizontalGridView extends HorizontalGridView {
                             callback.pullup();
                     }
                 }
-            }/*else {
-                    return super.dispatchTouchEvent(ev);
-            }*/
+            }
+
             if(!ismove && !isShowDelete && Math.abs(ev.getX() - x1) >= Math.abs(ev.getY() - y1) &&  Math.abs(ev.getX() - x1)>30){
                 return super.dispatchTouchEvent(ev);
             }
-            /*else if (Math.abs(ev.getX() - x1) < Math.abs(ev.getY() - y1) && getSelectedPosition() >= Cmd.DEFAULT_ROLE_COUNT) {
-
-                if (getSelectedPosition() == 0) {
-                    chileview = getChildAt(getSelectedSubPosition());
-                    deletelayout = (RelativeLayout) chileview.findViewById(R.id.delete_layout);
-                    content = (FrameLayout) chileview.findViewById(R.id.content_layout);
-                } else {
-                    chileview = getChildAt(getSelectedSubPosition() + 1);
-                    deletelayout = (RelativeLayout) chileview.findViewById(R.id.delete_layout);
-                    content = (FrameLayout) chileview.findViewById(R.id.content_layout);
-                }
-                if (deletelayout != null) {
-                    if (Math.round(ev.getY() - y1) > 10) {
-                        if (deletelayout.getVisibility() == View.VISIBLE) {
-                            if (isUp) {
-                                deletelayout.setVisibility(View.INVISIBLE);
-                                isShowDelete = false;
-                                ValueAnimator animator = ValueAnimator.ofFloat(0, 0).setDuration(300);
-                                animator.start();
-                                animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                                    @Override
-                                    public void onAnimationUpdate(ValueAnimator animation) {
-                                        float curVal = (float) animation.getAnimatedValue();
-                                        ViewHelper.setTranslationY(content, curVal);//注意不要使用btn.setTranslationY
-                                    }
-                                });
-                                callback.reset();
-                            }
-                        } else {
-                            isUp = false;
-                            deletelayout.setVisibility(View.VISIBLE);
-                            isShowDelete = true;
-                            ValueAnimator animator = ValueAnimator.ofFloat(0, content.getHeight()).setDuration(300);
-                            animator.start();
-                            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                                @Override
-                                public void onAnimationUpdate(ValueAnimator animation) {
-                                    float curVal = (float) animation.getAnimatedValue();
-                                    ViewHelper.setTranslationY(content, curVal);//注意不要使用btn.setTranslationY
-                                }
-                            });
-                            callback.pulldown();
-                        }
-
-                    } else if  (Math.round(ev.getY() - y1)< -10) {
-                        if (deletelayout.getVisibility() == View.VISIBLE) {
-                            if (!isUp) {
-                                deletelayout.setVisibility(View.INVISIBLE);
-                                isShowDelete = false;
-                                ValueAnimator animator = ValueAnimator.ofFloat(0, 0).setDuration(300);
-                                animator.start();
-                                animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                                    @Override
-                                    public void onAnimationUpdate(ValueAnimator animation) {
-                                        float curVal = (float) animation.getAnimatedValue();
-                                        ViewHelper.setTranslationY(content, curVal);//注意不要使用btn.setTranslationY
-                                    }
-                                });
-                                callback.reset();
-                            }
-                        } else {
-                            isUp = true;
-                            deletelayout.setVisibility(View.VISIBLE);
-                            isShowDelete = true;
-                            ValueAnimator animator = ValueAnimator.ofFloat(0, -content.getHeight()).setDuration(300);
-                            animator.start();
-                            animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-                                @Override
-                                public void onAnimationUpdate(ValueAnimator animation) {
-                                    float curVal = (float) animation.getAnimatedValue();
-                                    ViewHelper.setTranslationY(content, curVal);//注意不要使用btn.setTranslationY
-                                }
-                            });
-                            callback.pullup();
-                        }
-                    }
-                }
-                return true;
-            }*/
-
 
         } else if (action == MotionEvent.ACTION_UP) {
-            if (getSelectedPosition() < Cmd.DEFAULT_ROLE_COUNT && moveView != null) {//默认角色归原位
+            if (getSelectedPosition() < Cmd.DEFAULT_ROLE_COUNT && moveView != null) {//默认角色卡片归原位
                 if (getSelectedPosition() < Cmd.DEFAULT_ROLE_COUNT) {
 //                    ismove = false;
                     ValueAnimator animator = ValueAnimator.ofFloat(0, 0).setDuration(200);
@@ -222,8 +141,6 @@ public class CardHorizontalGridView extends HorizontalGridView {
                         ismove = false;
                     }
                 }
-
-
             }
 
             isDown = false;
@@ -293,9 +210,9 @@ public class CardHorizontalGridView extends HorizontalGridView {
                 } else {
                     return super.dispatchTouchEvent(ev);
                 }
-            } else if (Math.abs(offsetX) < Math.abs(offsetY) && getSelectedPosition() >= Cmd.DEFAULT_ROLE_COUNT) {
+            } else if (Math.abs(offsetX) < Math.abs(offsetY) && getSelectedPosition() >= Cmd.DEFAULT_ROLE_COUNT) {//竖向
 
-                //新建角色
+                //获取新建角色的卡片的childview
                 if (getSelectedPosition() == 0) {
                     chileview = getChildAt(getSelectedSubPosition());
                     deletelayout = (RelativeLayout) chileview.findViewById(R.id.delete_layout);
@@ -305,10 +222,11 @@ public class CardHorizontalGridView extends HorizontalGridView {
                     deletelayout = (RelativeLayout) chileview.findViewById(R.id.delete_layout);
                     content = (FrameLayout) chileview.findViewById(R.id.content_layout);
                 }
+
                 if (deletelayout != null) {
-                    if (offsetY > 10) {
-                        if (deletelayout.getVisibility() == View.VISIBLE) {
-                            if (isUp) {
+                    if (offsetY > 10) {//手指向下滑动
+                        if (deletelayout.getVisibility() == View.VISIBLE) {//当前删除提示页面是显示的
+                            if (isUp) {//卡片是上移状态，则向下移回原位
                                 deletelayout.setVisibility(View.INVISIBLE);
                                 isShowDelete = false;
                                 ValueAnimator animator = ValueAnimator.ofFloat(0, 0).setDuration(100);
@@ -322,7 +240,7 @@ public class CardHorizontalGridView extends HorizontalGridView {
                                 });
                                 callback.reset();
                             }
-                        } else {
+                        } else {//当前删除提示页面是不显示的，则卡片下移，显示删除提示页面
                             isUp = false;
                             deletelayout.setVisibility(View.VISIBLE);
                             isShowDelete = true;
@@ -338,9 +256,9 @@ public class CardHorizontalGridView extends HorizontalGridView {
                             callback.pulldown();
                         }
 
-                    } else if (offsetY < -10) {
-                        if (deletelayout.getVisibility() == View.VISIBLE) {
-                            if (!isUp) {
+                    } else if (offsetY < -10) {//手势上滑
+                        if (deletelayout.getVisibility() == View.VISIBLE) {//当前删除提示页面是显示的
+                            if (!isUp) {//如果卡片为下移状态，卡片上移回原位，隐藏删除提示页面
                                 deletelayout.setVisibility(View.INVISIBLE);
                                 isShowDelete = false;
                                 ValueAnimator animator = ValueAnimator.ofFloat(0, 0).setDuration(100);
@@ -354,7 +272,7 @@ public class CardHorizontalGridView extends HorizontalGridView {
                                 });
                                 callback.reset();
                             }
-                        } else {
+                        } else {////当前删除提示页面是非显示的，卡片上移，显示删除提示页面
                             isUp = true;
                             deletelayout.setVisibility(View.VISIBLE);
                             isShowDelete = true;
@@ -449,6 +367,9 @@ public class CardHorizontalGridView extends HorizontalGridView {
         callback = listener;
     }
 
+    /**
+     * 手势接口回调，方便是有此控件的页面监听动作进行其他控件刷新
+     */
     public interface GestureListener {
         void pullup();
 

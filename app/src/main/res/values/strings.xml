@@ -2,9 +2,7 @@
     <string name="app_name">嗨蛋</string>
     <string name="action_settings">Settings</string>
 
-
-
-
+    <!--反馈意见文案-->
     <string name="text_send">发送</string>
     <string name="bt_cancel">取消</string>
     <string name = "head_left_back">返回</string>
@@ -13,12 +11,13 @@
     <string name = "text_hint_content">请留言:</string>
     <string name = "head_feedback">反馈</string>
 
+    <!--vip文案-->
     <string name="text_vip_hint">填写您的邮箱地址或手机号码</string>
     <string name="text_vip_information_1">留下您的联系方式，成为我们的VIP会员：</string>
     <string name="text_vip_information_2">1 远程技术支持服务 7×24小时,VIP座席优先受理；\n2 公司正价新品享优惠价格；\n3 优先体验新品机会；\n4 其他后续礼遇；</string>
     <string name="text_vip_information_3">TBZ</string>
 
-
+    <!--隐私政策文案-->
     <string name="text_privacy_1">TBZ尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，TBZ会按照本隐私权政策的规定使用和披露您的个人信息。但TBZ将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，TBZ不会将这些信息对外披露或向第三方提供。TBZ会不时更新本隐私权政策。</string>
     <string name="text_privacy_2">您在同意TBZ服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于TBZ服务使用协议不可分割的一部分。</string>
     <string name="text_privacy_3">1. 适用范围</string>
@@ -35,16 +34,15 @@
     <string name="text_privacy_14">6. 信息安全</string>
     <string name="text_privacy_15">a) TBZ帐号均有安全保护功能，请妥善保管您的用户名及密码信息。TBZ将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。    \nb) 在使用TBZ网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是TBZ用户名及密码发生泄露，请您立即联络TBZ客服，以便TBZ采取相应措施。</string>
 
+    <!--关于我们文案-->
     <string name = "text_about_us">TBZ（深圳市天博智科技有限公司）成立于2011年，总部设在中国深圳，创始团队来自中国科学院、美国卡内基梅隆大学、香港科技大学等世界一流的机器人与人工智能研究机构，在智能语音识别技术的研发和产业化方面有着独特的行业地位。TBZ聚焦于消费类机器人的研发及销售领域，企业核心理念是用科学、科技、科幻的产品和内容让人永葆探索童心。</string>
 
-
-
+    <!--自定义问答文案-->
     <string name="diy_text1">在嗨蛋上，你可以像这样训练：\n问：老王去哪了？\n答：老王去隔壁了！\n训练好后，就可以当着老王问：“老王去哪了？”\n嗨蛋就会按照你教好的说：“老王去隔壁了！”</string>
     <string name="diy_text2">长按开始训练，跟随嗨蛋语音提示操作，很简单</string>
     <string name="diy_text3">提示：最多可以录制多达5个问答，第六个会顶替第一个，以此类推；</string>
 
-    <string name="happytogether_text">第一步：最多四个嗨蛋依次开机\n第二部：点下面的</string>
-
+    <!--多机互动节目字符串列表-->
     <string-array name="hightogether">
         <item>白日依山尽</item>
         <item>朝辞白帝彩云间</item>
@@ -68,24 +66,29 @@
         <item>昨天马云跟我说话啦</item>
     </string-array>
 
-
     <!--角色扮演页文案-->
     <string name="director_text">角色扮演</string>
     <string name="addrole_continue">继续</string>
     <string name="addrole_cancle">取消</string>
     <string name="addrole_save">保存</string>
+    <string name="edit_name_save">保存</string>
     <string name="directorfragment_topprompt_text">嗨蛋提示：大王，请在嗨蛋安静时下命令，再给小的一个红绿灯的时间准备。</string>
     <string name="change_role_button_text">更换角色</string>
+    <string name="select_role_text">选择角色</string>
+    <string name="cancle_select_role_text">不改了</string>
+
     <!--选择角色页面文案-->
     <string name="selectfragment_topprompt_text">左右滑动挑选，上下滑动删除</string>
     <string name="delete_role_prompt_text">拖出去斩了？</string>
     <string name="confirm_delete_text">斩</string>
     <string name="cancle_delete_text">拖回来</string>
+
     <!--添加角色页面文案-->
     <string name="recorder_touch_head_sound">大王，求录摸头声</string>
     <string name="recorder_shake_sound">大王，求录摇晃声</string>
     <string name="recorder_upside_sound">大王，求录倒置声</string>
     <string name="prompt_please_talk_to_egg">大王您对着蛋说话</string>
+
     <!--更多-->
     <string name="more_text">更多</string>
     <string name="more_powersound_text">开机声音</string>
@@ -93,15 +96,18 @@
     <string name="more_feedback_text">大王意见写这里</string>
     <string name="more_about_text">大王来看我啊</string>
     <string name="more_privacy_text">小的保护大王的隐私</string>
+
+    <!--开机声-->
     <string name="default_sound_text">默认开机声</string>
     <string name="diy_my_sound_text">定制开机声</string>
     <string name="my_sound_text">我的开机声</string>
 
+    <!--多机互动-->
     <string name="multi_eggs_interaction_text">多机互动</string>
     <string name="multi_eggs_interaction_steps_text">连接嗨蛋步骤：\n1.大王，亮出您的蛋（超过4个小的接受不了）\n2.第1个蛋拨动到App模式，播放完开机声\n3.第2个蛋拨动到App模式，等待提示音：“我连上了”\n4.（如果您有3个蛋）第3个蛋拨动到App模式，等待提示音：“我也连上了”\n5.（如果您有4个蛋）第4个蛋拨动到App模式，等待提示音：“我也也连上了” </string>
-
     <string name="all_play_text">播放全部</string>
     <string name="all_play_smalltext">摸头来停止播放。</string>
-    
+
+    <!--关于我们-->
     <string name="company_website">www.mytbz.com</string>
 </resources>

@@ -97,13 +97,13 @@ public class SelectRoleFragment extends Fragment implements View.OnTouchListener
      */
     private void initView(View v) {
         topcenter_tv = (TextView) v.findViewById(R.id.id_tv_center);
-        topcenter_tv.setText("选择角色");
+        topcenter_tv.setText(R.string.select_role_text);
         topcenter_tv.setVisibility(View.VISIBLE);
         topleft_tv = (TextView) v.findViewById(R.id.id_tv_left);
         topleft_iv = (ImageView) v.findViewById(R.id.id_iv_back);
         topleft_iv.setVisibility(View.VISIBLE);
         topleft_tv.setVisibility(View.VISIBLE);
-        topleft_tv.setText("不改了");
+        topleft_tv.setText(R.string.cancle_select_role_text);
         topleft_iv.setOnTouchListener(this);
         topleft_tv.setOnTouchListener(this);
 

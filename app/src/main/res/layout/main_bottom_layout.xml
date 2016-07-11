@@ -29,7 +29,7 @@
             android:gravity="center"
             android:textSize="10dp"
             android:textColor="@color/bottomtabtext_color"
-            android:text="角色扮演" />
+            android:text="@string/director_text" />
 
     </LinearLayout>
 
@@ -81,7 +81,7 @@
             android:padding="3dp"
             android:textSize="10dp"
             android:textColor="@color/bottomtabtext_color"
-            android:text="更多" />
+            android:text="@string/more_text" />
 
     </LinearLayout>
 

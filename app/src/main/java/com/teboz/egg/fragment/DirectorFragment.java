@@ -83,12 +83,12 @@ public class DirectorFragment extends Fragment implements View.OnClickListener {
         topright_tv = (TextView) v.findViewById(R.id.id_tv_right);
         topright_ib = (ImageButton) v.findViewById(R.id.id_ib_right);
 
-        topcenter_tv.setText("角色扮演");
+        topcenter_tv.setText(R.string.director_text);
         topright_ib.setVisibility(View.VISIBLE);
         topcenter_tv.setVisibility(View.VISIBLE);
         topright_ib.setOnClickListener(this);
         topright_tv.setOnClickListener(this);
-        topright_tv.setText("保存");
+        topright_tv.setText(R.string.edit_name_save);
         topright_tv.setTextColor(getResources().getColor(R.color.redtext_color));
 
         changerole_btn = (Button) v.findViewById(R.id.changerole_btn);

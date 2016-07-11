@@ -43,7 +43,7 @@ public class MoreFragment extends Fragment{
      */
     private void initView(){
         topcenter_tv = (TextView) mMoreView.findViewById(R.id.id_tv_center);
-        topcenter_tv.setText("更多");
+        topcenter_tv.setText(R.string.more_text);
     }
 
 

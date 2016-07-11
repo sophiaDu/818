@@ -91,7 +91,6 @@ public class SetPowerSoundActivity extends Activity implements View.OnClickListe
         mysound_pic = (ImageView) findViewById(R.id.mysound_pic);
 //        ms_listen_tv.setOnClickListener(this);
 //        ds_listen_tv.setOnClickListener(this);
-
         register();//注册广播
 
     }
@@ -252,10 +251,10 @@ public class SetPowerSoundActivity extends Activity implements View.OnClickListe
 
         //判断当前开机声的选项刷新勾选图标,1 我的开机声，2 默认开机声
         int choose = myApplication.getSpIntValue("currentpowersound");
-        if (choose == 1) {//当前选择的是我的开机声
+        if (choose == 1) {//我的开机声
             mysoundchecked_iv.setImageResource(R.mipmap.more_start_checked_red);
             defaultsoundchecked_iv.setImageResource(R.mipmap.more_start_checked_white);
-        } else if (choose == 0) {//当前选择的是默认开机声
+        } else if (choose == 0) {//默认开机声
             mysoundchecked_iv.setImageResource(R.mipmap.more_start_checked_white);
             defaultsoundchecked_iv.setImageResource(R.mipmap.more_start_checked_red);
 
