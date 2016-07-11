@@ -70,6 +70,10 @@
 
 
     <!--角色扮演页文案-->
+    <string name="director_text">角色扮演</string>
+    <string name="addrole_continue">继续</string>
+    <string name="addrole_cancle">取消</string>
+    <string name="addrole_save">保存</string>
     <string name="directorfragment_topprompt_text">嗨蛋提示：大王，请在嗨蛋安静时下命令，再给小的一个红绿灯的时间准备。</string>
     <string name="change_role_button_text">更换角色</string>
     <!--选择角色页面文案-->
@@ -98,4 +102,6 @@
 
     <string name="all_play_text">播放全部</string>
     <string name="all_play_smalltext">摸头来停止播放。</string>
+    
+    <string name="company_website">www.mytbz.com</string>
 </resources>
