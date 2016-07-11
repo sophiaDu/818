@@ -58,8 +58,8 @@ public class SetPowerSoundActivity extends Activity implements View.OnClickListe
         topleft_iv = (ImageView) findViewById(R.id.id_iv_back);
         topcenter_tv = (TextView) findViewById(R.id.id_tv_center);
         topleft_tv = (TextView) findViewById(R.id.id_tv_left);
-        topleft_tv.setText("更多");
-        topcenter_tv.setText("定制开机声");
+        topleft_tv.setText(R.string.more_text);
+        topcenter_tv.setText(R.string.diy_my_sound_text);
         topleft_tv.setVisibility(View.VISIBLE);
         topleft_iv.setVisibility(View.VISIBLE);
 

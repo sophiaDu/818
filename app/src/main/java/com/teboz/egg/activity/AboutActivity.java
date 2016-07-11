@@ -44,7 +44,7 @@ public class AboutActivity extends Activity implements View.OnClickListener{
         id_tv_left.setText(R.string.head_left_back);
         id_tv_center.setText(R.string.more_about_text);
 
-        weblink.setText("www.mytbz.com");
+        weblink.setText(R.string.company_website);
     }
 
 

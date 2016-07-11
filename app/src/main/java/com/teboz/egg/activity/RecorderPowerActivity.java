@@ -52,7 +52,7 @@ public class RecorderPowerActivity extends Activity implements View.OnClickListe
 //        topleft_ib.setVisibility(View.VISIBLE);
 //        topleft_tv.setVisibility(View.VISIBLE);
 //        topleft_tv.setText("取消");
-        topcenter_tv.setText("定制开机声");
+        topcenter_tv.setText(R.string.diy_my_sound_text);
 //        topleft_ib.setOnClickListener(this);
 //        topleft_tv.setOnClickListener(this);
         countdown_tv = (TextView) findViewById(R.id.countdown_tv);

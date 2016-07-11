@@ -57,9 +57,9 @@ public class AddRoleActivity extends Activity implements View.OnClickListener {
         topcenter_tv = (TextView) findViewById(R.id.id_tv_center);
         topright_tv = (TextView) findViewById(R.id.id_tv_right);
         topleft_tv.setPadding(Utils.dip2px(this, 20), 0, 0, 0);
-        topleft_tv.setText("取消");
-        topcenter_tv.setText("角色扮演");
-        topright_tv.setText("继续");
+        topleft_tv.setText(R.string.addrole_cancle);
+        topcenter_tv.setText(R.string.director_text);
+        topright_tv.setText(R.string.addrole_continue);
         topright_tv.setTextColor(getResources().getColor(R.color.redtext_color));
         topleft_tv.setVisibility(View.VISIBLE);
         topleft_tv.setOnClickListener(this);

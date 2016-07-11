@@ -60,8 +60,8 @@ public class HighTogetherActivity extends Activity implements View.OnClickListen
         topleft_iv = (ImageView) findViewById(R.id.id_iv_back);
         topcenter_tv = (TextView) findViewById(R.id.id_tv_center);
         topleft_tv = (TextView) findViewById(R.id.id_tv_left);
-        topleft_tv.setText("更多");
-        topcenter_tv.setText("一起嗨");
+        topleft_tv.setText(R.string.more_text);
+        topcenter_tv.setText(R.string.multi_eggs_interaction_text);
         topleft_tv.setVisibility(View.VISIBLE);
         topleft_iv.setVisibility(View.VISIBLE);
 

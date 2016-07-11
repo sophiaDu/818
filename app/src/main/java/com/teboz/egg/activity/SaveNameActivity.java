@@ -39,8 +39,8 @@ public class SaveNameActivity extends Activity implements View.OnClickListener {
     private void initView() {
         topcenter_tv = (TextView) findViewById(R.id.id_tv_center);
         topright_tv = (TextView) findViewById(R.id.id_tv_right);
-        topcenter_tv.setText("角色扮演");
-        topright_tv.setText("保存");
+        topcenter_tv.setText(R.string.director_text);
+        topright_tv.setText(R.string.addrole_save);
         topright_tv.setVisibility(View.VISIBLE);
         topright_tv.setOnClickListener(this);
 
